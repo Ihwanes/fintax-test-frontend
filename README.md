@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# fintax-test-frontend
+This is a personal website created with Vue.js and Vuetify
