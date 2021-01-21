@@ -41,6 +41,7 @@
       <HelloWorld/>
     </v-main>
   </v-app>
+  
 </template>
 
 <script>
