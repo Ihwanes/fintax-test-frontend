@@ -1,4 +1,5 @@
 <template>
+  <!-- Hero image section -->
   <v-parallax
     dark
     src="../assets/genshin.jpg"

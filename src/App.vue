@@ -1,5 +1,7 @@
 <template>
   <v-app>
+
+    <!-- Create an app bar -->
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-avatar>
@@ -21,6 +23,7 @@
       </v-btn>
     </v-app-bar>
 
+    <!-- Place to including the components that being used in this project to the base page -->
     <v-main>
       <HelloWorld />
       <Table />
@@ -29,12 +32,15 @@
 </template>
 
 <script>
+
+//Import the components
 import HelloWorld from "./components/HelloWorld";
 import Table from "./components/Table";
 
 export default {
   name: "App",
 
+  //List of all the components that being used in this project
   components: {
     HelloWorld,
     Table,
