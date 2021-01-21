@@ -1,28 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+        <v-avatar>
+          <img src="../src/assets/my-foto-avatar.jpg" alt="Ihwanes Avatar" />
+        </v-avatar>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <span class="mr-2">Ihwanes</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -38,20 +22,22 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <HelloWorld />
+      <Table />
     </v-main>
   </v-app>
-  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from "./components/HelloWorld";
+import Table from "./components/Table";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     HelloWorld,
+    Table,
   },
 
   data: () => ({
