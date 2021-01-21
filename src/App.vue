@@ -26,6 +26,8 @@
     <!-- Place to including the components that being used in this project to the base page -->
     <v-main>
       <HelloWorld />
+      <Hero />
+      <Stuff />
       <Table />
     </v-main>
   </v-app>
@@ -36,6 +38,8 @@
 //Import the components
 import HelloWorld from "./components/HelloWorld";
 import Table from "./components/Table";
+import Hero from "./components/Hero";
+import Stuff from "./components/Stuff";
 
 export default {
   name: "App",
@@ -44,6 +48,8 @@ export default {
   components: {
     HelloWorld,
     Table,
+    Hero,
+    Stuff,
   },
 
   data: () => ({
