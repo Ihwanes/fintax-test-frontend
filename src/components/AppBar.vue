@@ -23,7 +23,7 @@
         </template>
         <v-list>
           <v-list-item v-for="(item, index) in items" :key="index">
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title><a ref="item.link">{{ item.title }}</a></v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -35,10 +35,11 @@
 export default {
   data: () => ({
     items: [
-      { title: "Gmail" },
-      { title: "Gitlab" },
-      { title: "Github" },
-      { title: "LinkedIn" },
+      { title: "Gmail", link: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ihwan1999@gmail.com" },
+      { title: "Gitlab", link: "https://gitlab.com/ihwanes" },
+      { title: "Github", link: "https://github.com/Ihwanes"},
+      { title: "LinkedIn", link: "https://www.linkedin.com/in/ihwan-e-556a34136/" },
+      { title: "Details", link: "/contact "}
     ],
   }),
 };
