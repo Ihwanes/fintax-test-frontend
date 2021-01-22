@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    Currently this is my Skills, will be added more of it for sure in the future, so keep it up!
     <v-card>
       <v-card-title>
         Skills

@@ -2,7 +2,7 @@
   <!-- Hero image section -->
   <v-parallax
     dark
-    src="../assets/genshin.jpg"
+    src="../assets/dsa.jpg"
     max-height="20%"
     max-width="50%"
   >

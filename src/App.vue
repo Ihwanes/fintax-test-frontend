@@ -31,16 +31,19 @@
       <Hero />
       <Stuff />
       <Table />
+      <Contact />
     </v-main>
   </v-app>
 </template>
 
 <script>
+
 //Import the components
 import HelloWorld from "./components/HelloWorld";
 import Table from "./components/Table";
 import Hero from "./components/Hero";
 import Stuff from "./components/Stuff";
+import Contact from "./components/Contact";
 
 export default {
   name: "App",
@@ -51,6 +54,7 @@ export default {
     Table,
     Hero,
     Stuff,
+    Contact,
   },
 
   data: () => ({

@@ -22,10 +22,3 @@
     </v-row>
   </v-container>
 </template>
-
-<style lang="stylus" scoped>
-$mdc-typography-styles-button: (
-  font-family: unquote("Roboto"),
-  font-size: 14
-);
-</style>
