@@ -1,28 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <!-- Create an app bar -->
+    <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+        <v-avatar>
+          <img src="../src/assets/my-foto-avatar.jpg" alt="Ihwanes Avatar" />
+        </v-avatar>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <v-spacer></v-spacer>
+        <div class="font-weight-medium" style="margin: 1em;">
+          <span class="mr-2">Ihwanes</span>
+        </div>
       </div>
 
       <v-spacer></v-spacer>
@@ -37,21 +25,36 @@
       </v-btn>
     </v-app-bar>
 
+    <!-- Place to including the components that being used in this project to the base page -->
     <v-main>
-      <HelloWorld/>
+      <HelloWorld />
+      <Hero />
+      <Stuff />
+      <Table />
+      <Contact />
     </v-main>
   </v-app>
-  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+
+//Import the components
+import HelloWorld from "./components/HelloWorld";
+import Table from "./components/Table";
+import Hero from "./components/Hero";
+import Stuff from "./components/Stuff";
+import Contact from "./components/Contact";
 
 export default {
-  name: 'App',
+  name: "App",
 
+  //List of all the components that being used in this project
   components: {
     HelloWorld,
+    Table,
+    Hero,
+    Stuff,
+    Contact,
   },
 
   data: () => ({
