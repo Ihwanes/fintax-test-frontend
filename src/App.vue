@@ -8,7 +8,7 @@
         </v-avatar>
 
         <v-spacer></v-spacer>
-        <div class="font-weight-medium" style="margin: 1em;">
+        <div class="font-weight-medium" style="margin: 1em">
           <span class="mr-2">Ihwanes</span>
         </div>
       </div>
@@ -28,16 +28,18 @@
     <!-- Place to including the components that being used in this project to the base page -->
     <v-main>
       <HelloWorld />
-      <Hero />
-      <Stuff />
-      <Table />
-      <Contact />
+      <v-container>
+        <Hero />
+        <Stuff />
+        <Table />
+        <h1>Contact me</h1>
+        <Contact />
+      </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 //Import the components
 import HelloWorld from "./components/HelloWorld";
 import Table from "./components/Table";
