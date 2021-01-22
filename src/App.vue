@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <!-- Create an app bar -->
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
@@ -8,7 +7,10 @@
           <img src="../src/assets/my-foto-avatar.jpg" alt="Ihwanes Avatar" />
         </v-avatar>
 
-        <span class="mr-2">Ihwanes</span>
+        <v-spacer></v-spacer>
+        <div class="font-weight-medium" style="margin: 1em;">
+          <span class="mr-2">Ihwanes</span>
+        </div>
       </div>
 
       <v-spacer></v-spacer>
@@ -34,7 +36,6 @@
 </template>
 
 <script>
-
 //Import the components
 import HelloWorld from "./components/HelloWorld";
 import Table from "./components/Table";
